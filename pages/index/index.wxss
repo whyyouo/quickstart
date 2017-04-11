@@ -1,29 +1,52 @@
 /**index.wxss**/
-
-.userinfo {
+.oneclass {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding: 30rpx 0;
+  box-sizing: border-box;
+  background-color: lightgray;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+/**输入框样式**/
+.topclass {
+  width: 650rpx;
+  height: 130rpx;
+  background-color: white;
+  /**小圆角设置**/
+  border-radius: 6px;
+  /**字体显示靠右**/
+  text-align: right;
+  /**字高**/
+  line-height: 100rpx;
+  padding-right: 40rpx;
+  margin-bottom: 20rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.btnGroup{
+  display: flex;
+  flex-direction: row;
 }
 
-.usermotto {
-  margin-top: 100px;
+.item{
+  width: 150rpx;
+  min-height: 140rpx;
+  border-radius: 5px;
+  margin: 6px;
+  text-align: center;
+  line-height: 135rpx;
 }
 
-.user-input {
-  width: 128rpx;
-  height: 128rpx;
+.orange{
+  color: oldlace;
+  background: orange;
+  border: solid 1px white;
 }
 
-
+.gray{
+  color: lightgray;
+  background: darkgray;
+  border: solid 1px white;
+}
