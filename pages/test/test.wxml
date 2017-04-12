@@ -1,5 +1,12 @@
-<view class="news-wrap">
-  <view class="test">
-    two
+<view class="news-wrap-one">
+  <view class="news-wrap" catchtap="oneTest" id="1">
+    <view class="test" catchtap="oneTest"> 1 </view>
+    <view class="test1" bindtap="oneTest"> 2 </view>
+    1
+  </view>
+  <view class="news-wrap-one" bindtap="twoTest" id="2">
+    <view class="test" id="3"> 3 </view>
+    <view class="test1" id="4"> 4 </view>
+    2
   </view>
 </view>

@@ -40,13 +40,13 @@
 }
 
 .orange{
-  color: oldlace;
+  color: white;
   background: orange;
   border: solid 1px white;
 }
 
 .gray{
-  color: lightgray;
+  color: white;
   background: darkgray;
   border: solid 1px white;
 }

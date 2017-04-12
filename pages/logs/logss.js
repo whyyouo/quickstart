@@ -1,4 +1,4 @@
-// pages/test/test.js
+// pages/logs/logss.js
 Page({
   data:{},
   onLoad:function(options){
@@ -15,11 +15,5 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
-  }
-  ,oneTest:function(e){
-    console.log("one---> "+e.target.id);
-  },
-  twoTest:function(e){
-   console.log("two---> "+e.target.id);
   }
 })
