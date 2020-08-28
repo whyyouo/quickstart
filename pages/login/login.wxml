@@ -1,0 +1,10 @@
+<view class="page-body">
+ <image id='user_icon1' class="user_image" src="../../img/bg.png"></image>
+  <view class="page-section">
+   <view>登录</view>
+   <input id="login_user" class="login_user" maxlength='18' placeholder='请输入用户名'></input>
+   <view>密码</view>
+   <input id='login_pwd' class="login_pwd" password maxlength='18' placeholder='请输入密码'></input>
+   <button id='login_btn' type='primary' class='login_btn' bindtap='login'>登录</button>
+  </view>
+</view>
