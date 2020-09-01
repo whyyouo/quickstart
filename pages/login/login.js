@@ -1,6 +1,13 @@
 // pages/login/login.js
 Page({
-  data: {},
+  data: {
+    login:'登录',
+    pwd:'密码',
+    array: [1, 2, 3, 4, 5],
+    staffA: {firstName: 'Hulk', lastName: 'Hu'},
+    staffB: {firstName: 'Shang', lastName: 'You'},
+    staffC: {firstName: 'Gideon', lastName: 'Lin'}
+  },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
   },

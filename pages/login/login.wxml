@@ -1,9 +1,10 @@
 <view class="page-body">
- <image id='user_icon1' class="user_image" src="../../img/bg.png"></image>
+ <!-- <image id='user_icon1' class="user_image" src="../../img/bg.png"></image> -->
+  <image id='user_icon1' class="user_image" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=264986648,3480936303&fm=26&gp=0.jpg"></image>
   <view class="page-section">
-   <view>登录</view>
+   <view>{{login}}</view>
    <input id="login_user" class="login_user" maxlength='18' placeholder='请输入用户名'></input>
-   <view>密码</view>
+   <view>{{pwd}}</view>
    <input id='login_pwd' class="login_pwd" password maxlength='18' placeholder='请输入密码'></input>
    <button id='login_btn' type='primary' class='login_btn' bindtap='login'>登录</button>
   </view>

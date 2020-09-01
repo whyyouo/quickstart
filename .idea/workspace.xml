@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36b07955-859c-4e24-93a6-c7888928a4a8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/img/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/bg_006.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login/login.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login/login.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login/login.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+    <list default="true" id="36b07955-859c-4e24-93a6-c7888928a4a8" name="Default" comment="【UPDATE】新增login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +21,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gipMr41D1HlfCsBC9h5OXiZA5H" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="PropertiesComponent">
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -93,6 +87,21 @@
       <option name="presentableId" value="Default" />
       <updated>1491448800703</updated>
     </task>
+    <task id="LOCAL-00001" summary="【UPDATE】新增login">
+      <created>1598607670971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598607670971</updated>
+    </task>
+    <task id="LOCAL-00002" summary="【UPDATE】新增login">
+      <created>1598607726862</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598607726862</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,5 +122,9 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="【UPDATE】新增login" />
+    <option name="LAST_COMMIT_MESSAGE" value="【UPDATE】新增login" />
   </component>
 </project>

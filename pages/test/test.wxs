@@ -1,0 +1,11 @@
+// /pages/test.wxs
+var foo = "'hello world' from tools.wxs";
+var too = "'hello world' from test.wxs";
+var bar = function (d) {
+  return d;
+}
+module.exports = {
+  FOO: too,
+  bar: bar,
+};
+module.exports.msgg = "some msg aa";

@@ -1,5 +1,5 @@
 <view class="news-wrap-one">
-  <view class="news-wrap" catchtap="oneTest" id="1">
+  <!-- <view class="news-wrap" catchtap="oneTest" id="1">
     <view class="test" catchtap="oneTest"> 1 </view>
     <view class="test1" bindtap="oneTest"> 2 </view>
     1
@@ -8,5 +8,59 @@
     <view class="test" id="3"> 3 </view>
     <view class="test1" id="4"> 4 </view>
     2
-  </view>
+  </view> -->
+
+  <!-- 列表渲染 -->
+  <!-- <view wx:for="{{array}}"> {{item}} </view> -->
+  <!-- 条件渲染 -->
+  <!-- <view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+  <view wx:elif="{{view == 'APP'}}"> APP </view>
+  <view wx:else="{{view == 'MINA'}}"> MINA </view> -->
+
+  <!-- 组件属性(需要在双引号之内) -->
+  <view id="item-{{item_id_0}}">item_id_绑定</view>
+  <view id="item-{{item_id_1}}"> </view>
+  <!-- 选择控件绑定值 -->
+  <checkbox checked="{{checkedtype}}"> </checkbox>
+
+  <!-- 三元运算 -->
+  <view hidden="{{flag ? true : false}}"> Hidden </view>
+  <!-- 算数运算 -->
+  <view> {{a + b}} + {{c}} + d </view>
+
+  <!-- 数据路径运算 -->
+  <view>{{object.key}} {{array[1]}}</view>
+
+  <!-- 扩展运算符 ... 来将一个对象展开 -->
+  <!-- <template is="objectCombine" data="{{for: a, bar: b}}"></template> -->
+  <!-- <template is="objectCombine" data="{{...obj1, ...obj2, e: 5}}"></template> -->
+  <!-- 花括号和引号之间如果有空格，将最终被解析成为字符串 -->
+  <!-- <view wx:for="{{[1,2,3]}} ">
+  {{item}}
+  </view> -->
+  <!-- 类似 block wx:if，也可以将 wx:for 用在<block/>标签上，以渲染一个包含多节点的结构块 -->
+  <!-- <block wx:for="{{[1, 2, 3]}}">
+  <view> {{index}}: {{item}}</view>
+  </block> -->
+
+  <!-- <view wx:for="{{[1,2,3]}} ">
+  {{item}}
+  </view> -->
+
+  <!-- is 属性可以使用 Mustache 语法，来动态决定具体需要渲染哪个模板： -->
+  <!-- <template name="odd">
+    <view> odd </view>
+  </template>
+  <template name="even">
+    <view> even </view>
+  </template>
+
+  <block wx:for="{{[1, 2, 3, 4, 5]}}">
+    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
+  </block> -->
+
+  <wxs src='test.wxs' module="tools"/>
+  <view> {{tools.msgg}} </view>
+  <view> {{tools.bar(tools.FOO)}} </view>
+
 </view>
