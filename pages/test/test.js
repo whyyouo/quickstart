@@ -21,6 +21,7 @@ Page({
       c: 3,
       d: 4
     },
+    value:'不是村支书',
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -42,5 +43,10 @@ Page({
   },
   twoTest:function(e){
    console.log("two---> "+e.target.id);
-  }
+  },
+  loginForm: function(data) {
+    console.log(data.detail.value)//  {username: "hgj", password: "fsdfsd"}
+    var username = data.detail.value.username
+    var password = data.detail.value.password;
+}
 })

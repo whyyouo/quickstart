@@ -18,18 +18,18 @@
   <view wx:else="{{view == 'MINA'}}"> MINA </view> -->
 
   <!-- 组件属性(需要在双引号之内) -->
-  <view id="item-{{item_id_0}}">item_id_绑定</view>
-  <view id="item-{{item_id_1}}"> </view>
+  <!-- <view id="item-{{item_id_0}}">item_id_绑定</view> -->
+  <!-- <view id="item-{{item_id_1}}"> </view> -->
   <!-- 选择控件绑定值 -->
-  <checkbox checked="{{checkedtype}}"> </checkbox>
+  <!-- <checkbox checked="{{checkedtype}}"> </checkbox> -->
 
   <!-- 三元运算 -->
-  <view hidden="{{flag ? true : false}}"> Hidden </view>
+  <!-- <view hidden="{{flag ? true : false}}"> Hidden </view> -->
   <!-- 算数运算 -->
-  <view> {{a + b}} + {{c}} + d </view>
+  <!-- <view> {{a + b}} + {{c}} + d </view> -->
 
   <!-- 数据路径运算 -->
-  <view>{{object.key}} {{array[1]}}</view>
+  <!-- <view>{{object.key}} {{array[1]}}</view> -->
 
   <!-- 扩展运算符 ... 来将一个对象展开 -->
   <!-- <template is="objectCombine" data="{{for: a, bar: b}}"></template> -->
@@ -59,8 +59,67 @@
     <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
   </block> -->
 
-  <wxs src='test.wxs' module="tools"/>
+  <!-- <wxs src='test.wxs' module="tools"/>
   <view> {{tools.msgg}} </view>
-  <view> {{tools.bar(tools.FOO)}} </view>
+  <view> {{tools.bar(tools.FOO)}} </view> -->
 
+  <!--wxml页面渲染-->
+   <!-- <wxs module="m1">
+   var msg = "hello world";
+   module.exports.message = msg;
+   </wxs>
+   <view> {{m1.message}} </view>
+
+   <wxs module="one">
+   var test = 'test one';
+   module.exports.message = '不是村支书';
+      </wxs>
+      <view>{{one.message}}</view> -->
+
+      <!-- <input value="{{value}}" /> -->
+
+ <!-- 组件模板 -->
+<!-- <view class="wrapper">
+  <view>这里是组件的内部节点</view>
+  <slot></slot>
+</view> -->
+
+<!-- 引用组件的页面模板 -->
+<!-- <view>
+  <component-tag-name>
+    这部分内容将被放置在组件 <slot> 的位置上
+     <view>这里是插入到组件slot中的内容</view>
+  </component-tag-name>
+</view> -->
+
+<!-- 组件模板 -->
+<!-- <view class="wrapper">
+  <slot name="before"></slot>
+  <view>这里是组件的内部细节</view>
+  <slot name="after"></slot>
+</view> -->
+
+
+<!-- 引用组件的页面模板 -->
+<!-- - <view> -->
+  <!-- <component-tag-name> -->
+    <!-- 这部分内容将被放置在组件 <slot name="before"> 的位置上 -->
+    <!-- <view slot="before">这里是插入到组件slot name="before"中的内容</view> -->
+    <!-- 这部分内容将被放置在组件 <slot name="after"> 的位置上 -->
+    <!-- <view slot="after">这里是插入到组件slot name="after"中的内容</view> -->
+  <!-- </component-tag-name> -->
+<!-- </view> -->
+
+<!-- 页面的 WXML -->
+<!-- <custom-component class="host">这段文本是黄色的</custom-component> -->
+
+<form bindsubmit='loginForm'>
+  <text class='login-title'>用户登录：</text>
+  <input type='text' name='username' placeholder="请输入用户名"></input>
+  <input type='password' name='password' placeholder="请输入账号密码"></input>
+  <view class='ligin-button'>
+    <button formType="submit" type='primary'>点击提交</button>
+    <button formType="reset" type='primary'>重置数据表单</button>
+  </view>
+</form>
 </view>

@@ -23,13 +23,11 @@ Page({
   onUnload: function () {
     // 页面关闭
   }
-  , login: function (e) {//登录
-    console.log("login---> " + e.target.id);
-  },
-  register: function (e) {//注册
-    console.log("register---> " + e.target.id);
-  },
-  findpwd: function (e) {//找回密码
-    console.log("findpwd---> " + e.target.id);
+  , 
+  loginForm: function (data) {//登录
+    var userName = data.detail.value.username;
+    var userPwd = data.detail.value.password;
+    console.log("userName---> " + userName);
+    console.log("userPwd---> " + userPwd);
   }
 })

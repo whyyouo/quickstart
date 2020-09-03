@@ -1,11 +1,13 @@
 <view class="page-body">
  <!-- <image id='user_icon1' class="user_image" src="../../img/bg.png"></image> -->
   <image id='user_icon1' class="user_image" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=264986648,3480936303&fm=26&gp=0.jpg"></image>
+  <form bindsubmit="loginForm">
   <view class="page-section">
    <view>{{login}}</view>
-   <input id="login_user" class="login_user" maxlength='18' placeholder='请输入用户名'></input>
+   <input id="login_user" name="username" placeholder='请输入用户名'></input>
    <view>{{pwd}}</view>
-   <input id='login_pwd' class="login_pwd" password maxlength='18' placeholder='请输入密码'></input>
-   <button id='login_btn' type='primary' class='login_btn' bindtap='login'>登录</button>
+   <input id='login_pwd' name="password" password placeholder='请输入密码'></input>
+   <button id='login_btn' type='primary' form-type="submit" class='login_btn'>登录</button>
   </view>
+</form>
 </view>
