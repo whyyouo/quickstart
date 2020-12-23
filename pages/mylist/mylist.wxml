@@ -5,7 +5,7 @@
     <view class="view_wenzi2">
       <image class="image_1" src="../../img/bg.png" />
       <view class="view_wenzi3">
-        <text>{{item.name}}</text>
+        <text name="item_name">{{item.name}}</text>
         <text class="text_small">{{item.content}}</text>
       </view>
     </view>

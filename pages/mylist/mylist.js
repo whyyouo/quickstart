@@ -22,7 +22,9 @@ Page({
       }]
   },
   onItemClick:function(datas){
-   console.log("点击-->",datas.currentTarget.id);
-   console.log("点击-->",datas.currentTarget.name);
+   console.log("id-->",datas.currentTarget.id);
+   //var item_name = datas.currentTarget.dataset.name;
+   var item_name = this.data.list[datas.currentTarget.id].name;
+   console.log("name-->",item_name);
   },
 })
