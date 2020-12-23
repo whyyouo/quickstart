@@ -30,21 +30,19 @@ Page({
     var userPwd = data.detail.value.password;
     console.log("userName---> " + userName);
     console.log("userPwd---> " + userPwd);
-    var that = this;
-    wx.request({
-      url: 'https://myserver.com:8080', //仅为示例，并非真实的接口地址
-      data: {
-        x: '',
-        y: ''
-      },
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success (res) {
-        console.log(res.data)
-      }
-    })
-
-    
+    // var that = this;
+    // wx.request({
+    //   url: '', //仅为示例，并非真实的接口地址https://myserver.com:8080
+    //   data: {
+    //     x: '',
+    //     y: ''
+    //   },
+    //   header: {
+    //     'content-type': 'application/json' // 默认值
+    //   },
+    //   success (res) {
+    //     console.log(res.data)
+    //   }
+    // })    
   }
 })
