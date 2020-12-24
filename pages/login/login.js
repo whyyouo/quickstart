@@ -9,23 +9,7 @@ Page({
     staffB: {firstName: 'Shang', lastName: 'You'},
     staffC: {firstName: 'Gideon', lastName: 'Lin'}
   },
-  onLoad: function (options) {
-    // 页面初始化 options为页面跳转所带来的参数
-  },
-  onReady: function () {
-    // 页面渲染完成
-  },
-  onShow: function () {
-    // 页面显示
-  },
-  onHide: function () {
-    // 页面隐藏
-  },
-  onUnload: function () {
-    // 页面关闭
-  }
-  , 
-  loginForm: function (data) {//登录
+    loginForm: function (data) {//登录
     var userName = data.detail.value.username;
     var userPwd = data.detail.value.password;
     console.log("userName---> " + userName);
@@ -43,6 +27,12 @@ Page({
     //   success (res) {
     //     console.log(res.data)
     //   }
-    // })    
+    // }) 
+        // 保留当前页面，跳转到应用内的某个页面，使用wx.navigateBack可以返回到原页面。
+// 注意：调用 navigateTo 跳转时，调用该方法的页面会被加入堆栈，但是 redirectTo 
+wx.navigateTo({
+  url: '../mylist/mylist'
+});
+    
   }
 })
